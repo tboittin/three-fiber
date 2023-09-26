@@ -1,0 +1,11 @@
+Model Information:
+* title:	magikarp
+* source:	https://sketchfab.com/3d-models/magikarp-3d8673a6163e4ffe9f8f4bd28237e094
+* author:	My Crea Pro (https://sketchfab.com/Beany-Boy)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "magikarp" (https://sketchfab.com/3d-models/magikarp-3d8673a6163e4ffe9f8f4bd28237e094) by My Crea Pro (https://sketchfab.com/Beany-Boy) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

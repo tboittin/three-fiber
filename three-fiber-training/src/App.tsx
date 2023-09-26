@@ -1,33 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Canvas } from '@react-three/fiber'
+import Hilda from './Hilda'
+import Magikarp from './Magikarp'
+import { OrbitControls } from '@react-three/drei'
+import Pokeball from './Pokeball'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div style={{
+        width: '100vw',
+        height: '80vh',
+        backgroundColor: '#A9DDD6'
+      }}>
+        <Canvas>
+          <mesh>
+            <ambientLight intensity={0.5} />
+            <directionalLight color="white" position={[0, 0, 5]} intensity={1} />
+            <Magikarp position={[2, 0, 0]} />
+            <Pokeball position={[0, 0, 0]} />
+            <Hilda position={[-2, 0, 0]} />
+            <OrbitControls />
+          </mesh>
+        </Canvas>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
