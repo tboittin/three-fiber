@@ -17,8 +17,8 @@ function App() {
           <mesh>
             <ambientLight intensity={0.5} />
             <directionalLight color="white" position={[0, 0, 5]} intensity={1} />
-            <Magikarp position={[2, 0, 0]} />
-            <Pokeball position={[0, 0, 0]} />
+            <Magikarp position={[2, 0, 3]} />
+            <Pokeball position={[-0.5, 0, 0.75]} />
             <Hilda position={[-2, 0, 0]} />
             <OrbitControls />
           </mesh>

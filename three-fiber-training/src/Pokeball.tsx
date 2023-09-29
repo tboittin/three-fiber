@@ -13,8 +13,8 @@ export default function Pokeball(props: ThreeElements['mesh']) {
   const [active, setActive] = useState(false)
 
   // Subscribe this component to the render-loop, rotate the mesh every frame
-  // useFrame((state, delta) => (meshRef.current.rotation.x += delta*2.5))
-  useFrame((state, delta) => (meshRef.current.rotation.y += delta*2.5))
+  useFrame((state, delta) => (meshRef.current.rotation.x += delta*25))
+  useFrame((state, delta) => (meshRef.current.rotation.y += delta*25))
 
 const {scene} = useGLTF('/pokeball_gltf/scene.gltf')
 
@@ -23,7 +23,7 @@ const {scene} = useGLTF('/pokeball_gltf/scene.gltf')
     <mesh
       {...props}
       ref={meshRef}
-      scale={active ? .5 : .125}
+      scale={active ? .5 : .075}
       onClick={() => setActive(!active)}
       // onPointerOver={() => setHover(true)}
       // onPointerOut={() => setHover(false)}
